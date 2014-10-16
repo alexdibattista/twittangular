@@ -46,7 +46,7 @@ everyauth
     .findOrCreateUser( function (sess, accessToken, accessSecret, twitUser) {
         return usersByTwitId[twitUser.id] || (usersByTwitId[twitUser.id] = addUser('twitter', twitUser));
     })
-    .redirectPath('/');
+    .redirectPath('/user_timeline');
 
 
 // view engine setup
